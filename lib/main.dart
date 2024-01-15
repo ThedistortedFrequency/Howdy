@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:howdy/Pages/loginpage.dart';
+import 'package:howdy/Pages/registorpage.dart';
 import 'package:howdy/theme/light_theme.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class Howdy extends StatelessWidget {
     return MaterialApp(
       title: 'Howdy Chat App',
       theme: lightmode,
-      home: const LoginPage(),
+      home: const RegistorPage(),
     );
   }
 }

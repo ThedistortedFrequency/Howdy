@@ -3,8 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:howdy/widgets/mybutton.dart';
 import 'package:howdy/widgets/textfield.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+class RegistorPage extends StatelessWidget {
+  const RegistorPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -45,12 +45,21 @@ class LoginPage extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-
-              // password
               const Mytextfield(
                 obsecured: true,
                 hintText: "Password",
                 lable: "Password",
+                prefixIcon: Icon(Icons.password),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+
+              // password
+              const Mytextfield(
+                obsecured: true,
+                hintText: "Confirm Password",
+                lable: "Confirm Password",
                 prefixIcon: Icon(Icons.password),
               ),
 
@@ -59,17 +68,17 @@ class LoginPage extends StatelessWidget {
               ),
 
               // button
-              MyButton(text: "Login", onTap: () {}),
+              MyButton(text: "Registor", onTap: () {}),
 
               // register
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text("Don't have an account?"),
+                  const Text("have an account?"),
                   TextButton(
                     onPressed: () {},
-                    child: const Text("Register here"),
+                    child: const Text("Login here"),
                   ),
                 ],
               )
