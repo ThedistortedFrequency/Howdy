@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:howdy/utils/routes.dart';
 import 'package:howdy/widgets/mybutton.dart';
 import 'package:howdy/widgets/textfield.dart';
 
@@ -77,7 +78,9 @@ class RegistorPage extends StatelessWidget {
                 children: [
                   const Text("have an account?"),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, Screens.loginpage);
+                    },
                     child: const Text("Login here"),
                   ),
                 ],

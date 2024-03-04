@@ -22,7 +22,7 @@ class Mytextfield extends StatelessWidget {
         decoration: InputDecoration(
           contentPadding: const EdgeInsets.symmetric(vertical: 18),
           border: const OutlineInputBorder(
-            borderRadius: BorderRadius.all(Radius.circular(10)),
+            borderRadius: BorderRadius.all(Radius.circular(8)),
           ),
           hintText: hintText,
           label: Text(lable),
